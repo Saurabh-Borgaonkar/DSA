@@ -4,7 +4,7 @@ int main()
 {
     int n, i;
     cin >> n;
-    for (i = 1; i <= n; i++)
+    for (i = n; i >= 1; i--)
     {
         for (int j = i; j <=n-1; j++)
         {
