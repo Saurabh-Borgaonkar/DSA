@@ -1,7 +1,7 @@
-
-//Cheak a number is Prime or Not
+//Cheak a number is Prime or Not with optimaizatin method
 
 #include<iostream>
+#include<cmath>
 using namespace std;
 int main(){
     int n;
