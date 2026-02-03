@@ -20,6 +20,7 @@ int main()
             cout << " ";
         }
         for (int j = n; j >=i; j--)
+        
         {
             cout <<"*";
         }
@@ -27,7 +28,7 @@ int main()
     }
         for (i = 1; i <= n; i++)
     {
-        for (int j = 1; j <=i; j++)
+        for (int j = 2; j <=i; j++)
         {
             cout << "*";
         }
@@ -39,7 +40,7 @@ int main()
         {
             cout << " ";
         }
-        for (int j = 1; j <= i; j++)
+        for (int j = 2; j <= i; j++)
         {
             cout <<"*";
         }

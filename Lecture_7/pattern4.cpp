@@ -6,9 +6,9 @@ int main()
     cin >> n;
     for (i = 1; i <= n; i++)
     {
-        for (int j = 1; j <=n-i; j++)
+        for (int j = 1; j <n-i; j++)
         {
-            cout << "  ";
+            cout <<"  ";
         }
         for (int k = i; k<=2*i-1; k++)
         {
