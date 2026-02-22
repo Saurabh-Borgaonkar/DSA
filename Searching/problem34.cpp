@@ -1,23 +1,34 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[]={2,7,12,17,65};
-    int index=0;
+    int n;
+    cin>>n;
+    int arr[n];
     int target;
-
-    for(int i=0;i<5;i++){
-        cout<<arr[i]<<" ";
+    int l=0,h=n-1;
+    bool f=false;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
-     cin>>target;
-
-        for(int i=0;i<5;i++){
-            if(arr[i]==target){
-                cout<<i<<endl;
-                break;
-            }else if(arr[i]<target){
-                index++;
-            }
+    cout<<"\nEnter Target : ";
+    cin>>target;
+    while(l<=h){
+        int mid=(l+h)/2;
+        if(arr[mid]==target){
+            f=true;
+            break;
         }
-        cout<<"Where You can add new value at pos : "<<index;
+        if(arr[mid]<target){
+            l=mid+1;
+        }else if(arr[mid]>target){
+            h=mid-1;
+        }
+    }
+    if(f){
+        cout<<"\nFound";
+    }else{
+        cout<<"\nnot found";
+    }
+    
         return 0;
 }
