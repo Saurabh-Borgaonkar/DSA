@@ -9,14 +9,6 @@ int digitsum(int n){
     }
     return sum;
 }
-bool prime(int n){
-    for(int i=2;i*i<=n;i++){
-        if(n%i==0){
-            return false;
-        }
-    }
-    return true;
-}
 int main() {
 	int n;
 	cin>>n;
@@ -25,9 +17,7 @@ int main() {
     sum=digitsum(n);
     for(int i=2;i<=n;i++){
         while(n%i==0){
-            if(prime(i)){
                 factors=factors+digitsum(i);
-            }
             n=n/i;
         }
     }
