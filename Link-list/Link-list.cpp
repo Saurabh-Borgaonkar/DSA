@@ -67,10 +67,17 @@ int main(){
     push_back(10);
     push_back(20);
     push_back(30);
+    push_back(40);
+    push_back(50);
     PrintList();
     pop_front();
+    cout<<"After pop front :"<<endl;
     PrintList();
     pop_back();
+    cout<<"After pop back :"<<endl;
+    PrintList();
+    push_front(5);
+    cout<<"After push front :"<<endl;
     PrintList();
     return 0;
 }
